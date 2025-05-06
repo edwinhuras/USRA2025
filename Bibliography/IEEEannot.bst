@@ -265,7 +265,7 @@ MACRO {dec} {"Dec."}
 ENTRY
   { 
   	address
-	annote
+	annotation
     assignee
     author
     booktitle
@@ -451,10 +451,10 @@ FUNCTION {initialize.controls}
 
 % annotation addition
 FUNCTION {format.annotate}
-{ annote empty$
+{ annotation empty$
 	{ "" }
 	{ " \begin{quotation}\noindent "
-		annote
+		annotation
 		* " \end{quotation} " *
 	}
 	if$

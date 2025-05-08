@@ -265,7 +265,7 @@ MACRO {dec} {"Dec."}
 ENTRY
   { 
   	address
-	annotation
+	  annotation
     assignee
     author
     booktitle

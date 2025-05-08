@@ -1,10 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.1.14)  7 MAY 2025 21:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.1.14)  8 MAY 2025 09:13
 entering extended mode
  restricted \write18 enabled.
- file:line:error style messages enabled.
  %&-line parsing enabled.
-**/Users/edwinhuras/Desktop/USRA_2025/GitRepo/USRA2025/Bibliography/main
-(/Users/edwinhuras/Desktop/USRA_2025/GitRepo/USRA2025/Bibliography/main.tex
+**main.tex
+(./main.tex
 LaTeX2e <2024-11-01> patch level 1
 L3 programming layer <2024-12-25>
 (/Users/edwinhuras/Library/TinyTeX/texmf-dist/tex/latex/base/article.cls
@@ -50,43 +49,50 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 7.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 7.
- (./main.bbl
+(./main.bbl
 
 [1
 
 {/Users/edwinhuras/Library/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+Underfull \hbox (badness 2426) in paragraph at lines 26--26
+[]\OT1/cmr/m/n/10.95 Follower cells de-vel-oped "cryp-tic lamel-lipo-dia" that
+ []
+
+
+
+[2]
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <10.95> on input line 38.
 
 
-[2]
+[3]
 Underfull \hbox (badness 1264) in paragraph at lines 38--38
 []\OT1/cmr/m/n/10.95 Slower cell speeds (in sim-u-la-tion) im-prove ac-cu-racy,
  []
 
 
 
-[3])
+[4])
 
-[4] (./main.aux)
+[5] (./main.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 1
 L3 programming layer <2024-12-25>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 500 strings out of 475178
- 9641 string characters out of 5764967
+ 499 strings out of 475178
+ 9445 string characters out of 5764967
  398874 words of memory out of 5000000
  23556 multiletter control sequences out of 15000+600000
  564388 words of font info for 54 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 35i,6n,50p,3577b,377s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 35i,6n,50p,3515b,421s stack positions out of 10000i,1000n,20000p,200000b,200000s
  </Users/edwinhuras/Library/TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1095.600pk></Users/edwinhuras/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></Users/edwinhuras/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></Users/edwinhuras/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></Users/edwinhuras/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></Users/edwinhuras/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></Users/edwinhuras/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></Users/edwinhuras/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></Users/edwinhuras/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></Users/edwinhuras/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></Users/edwinhuras/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on main.pdf (4 pages, 133474 bytes).
+Output written on main.pdf (5 pages, 137403 bytes).
 PDF statistics:
- 72 PDF objects out of 1000 (max. 8388607)
- 44 compressed objects within 1 object stream
+ 75 PDF objects out of 1000 (max. 8388607)
+ 46 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

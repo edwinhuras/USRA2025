@@ -19,11 +19,11 @@
 
 \bibitem{agnelliSpatialKineticModel2023}
 J.~P. Agnelli, B.~Buffa, D.~Knopoff, and G.~Torres, ``A {{Spatial Kinetic Model}} of {{Crowd Evacuation Dynamics}} with {{Infectious Disease Contagion}},'' \emph{Bulletin of Mathematical Biology}, vol.~85, no.~4, p.~23, February 2023.
- \begin{quotation}\noindent Here is an annotation \end{quotation}
+
 
 \bibitem{jainRoleSinglecellMechanical2020}
 S.~Jain, V.~M.~L. Cachoux, G.~H. N.~S. Narayana, S.~{de Beco}, J.~D'Alessandro, V.~Cellerin, T.~Chen, M.~L. Heuz{\'e}, P.~Marcq, R.-M. M{\`e}ge, A.~J. Kabla, C.~T. Lim, and B.~Ladoux, ``The role of single-cell mechanical behaviour and polarity in driving collective cell migration,'' \emph{Nature Physics}, vol.~16, no.~7, pp. 802--809, July 2020.
-
+ \begin{quotation}\noindent \textbf{Collective Cell Migration in Ring Geometry:} \\ This study explores how epithelial cells migrate collectively in annular (ring-shaped) domains. While single-cell migration is well studied, collective migration introduces complex behaviors, including leading cells, follower cohorts, and bulk movement. \\ \textbf{Coordination Dynamics:} \begin{itemize} \item Coordination was quantified using the average cross product of each cell's unit velocity vector and its radial position vector (values: +1 = clockwise, -1 = anti-clockwise, 0 = unaligned). \item Cells began with oscillatory motion, but coordination peaked as cell trains collided and merged. \item Ultimately, cells reached confluence and adopted a stable coordinated direction (either +1 or -1). \item Coordination degraded with proliferation due to crowding ("cell jamming"), but was preserved when cell division was limited. \end{itemize} \textbf{Train Collisions and Polarity Reversal:} \begin{itemize} \item Colliding cell trains triggered directional reversal in one train via contact inhibition of locomotion. \item Reversal was linked to rapid polarity switching in the colliding cells. \item Final direction was best predicted by the size and speed of the last train to collide. \item Lamellipodial protrusions in leader cells were key: dominant leaders induced polarity reversal in opposing cells. \end{itemize} \textbf{Single-Cell Dynamics and Emergent Coordination:} \begin{itemize} \item Cells formed unidirectional polarity gradients within the group. \item Follower cells developed "cryptic lamellipodia" that tucked under leading cells, enabling persistent, coordinated movement. \item Disrupting lamellipodia in a few cells halted global coordination. \item Cell–cell junctions were required for initiating, but not maintaining, collective motion. \item Once coordination emerged, it persisted even after physically disrupting the train or isolating cells. \end{itemize} \textbf{Simulation and Implications:} \begin{itemize} \item A simple ring-domain simulation incorporating cell polarity and adhesion reproduced experimental findings. \item Long-term memory of polarity emerged as a critical mechanism, decoupling sustained motion from ongoing adhesion. \item Highlights how single-cell dynamics shape global migration—relevant for development, wound healing, and metastasis. \end{itemize} \end{quotation}
 
 \bibitem{martinez-gilEmergentBehaviorsScalability2017}
 F.~{Martinez-Gil}, M.~Lozano, and F.~Fern{\'a}ndez, ``Emergent behaviors and scalability for multi-agent reinforcement learning-based pedestrian models,'' \emph{Simulation Modelling Practice and Theory}, vol.~74, pp. 117--133, May 2017.
@@ -39,6 +39,6 @@ L.~Tweedy, P.~A. Thomason, P.~I. Paschke, K.~Martin, L.~M. Machesky, M.~Zagnoni,
 
 \bibitem{wheelerWholeGreaterSum2023}
 J.~D. Wheeler and K.~Y.~K. Chan, ``The {{Whole}} is {{Greater Than}} the {{Sum}} of {{Its Parts}}: {{Large-scale Phenomena Arising}} from {{Small-scale Biophysical Processes}},'' \emph{Integrative and Comparative Biology}, vol.~63, no.~6, pp. 1399--1404, December 2023.
- \begin{quotation}\noindent Annotation here. \end{quotation}
+
 
 \end{thebibliography}

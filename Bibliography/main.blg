@@ -16,14 +16,14 @@ Database file #1: merged.bib
 Done.
 You've used 6 entries,
             4480 wiz_defined-function locations,
-            932 strings with 13699 characters,
-and the built_in function-call counts, 6194 in all, are:
+            931 strings with 16042 characters,
+and the built_in function-call counts, 6192 in all, are:
 = -- 535
 > -- 220
 < -- 43
 + -- 113
 - -- 60
-* -- 356
+* -- 354
 := -- 925
 add.period$ -- 12
 call.type$ -- 6

@@ -17,6 +17,83 @@
 	year = {2023},
 }
 
+@article{hechtSelfAssistedAmoeboidNavigation2011,
+	abstract = {Background Living cells of many types need to move in response to external stimuli in order to accomplish their functional tasks; these tasks range from wound healing to immune response to fertilization. While the directional motion is typically dictated by an external signal, the actual motility is also restricted by physical constraints, such as the presence of other cells and the extracellular matrix. The ability to successfully navigate in the presence of obstacles is not only essential for organisms, but might prove relevant in the study of autonomous robotic motion. Methodology/Principal Findings We study a computational model of amoeboid chemotactic navigation under differing conditions, from motion in an obstacle-free environment to navigation between obstacles and finally to moving in a maze. We use the maze as a simple stand-in for a motion task with severe constraints, as might be expected in dense extracellular matrix. Whereas agents using simple chemotaxis can successfully navigate around small obstacles, the presence of large barriers can often lead to agent trapping. We further show that employing a simple memory mechanism, namely secretion of a repulsive chemical by the agent, helps the agent escape from such trapping. Conclusions/Significance Our main conclusion is that cells employing simple chemotactic strategies will often be unable to navigate through maze-like geometries, but a simple chemical marker mechanism (which we refer to as ``self-assistance'') significantly improves success rates. This realization provides important insights into mechanisms that might be employed by real cells migrating in complex environments as well as clues for the design of robotic navigation strategies. The results can be extended to more complicated multi-cellular systems and can be used in the study of mammalian cell migration and cancer metastasis.},
+	annotation = {
+\textbf{Stochastic Compass Model in Simple Environments} The authors present a simulation-based model of amoeboid chemotaxis in both open space and mazes. Cells extend pseudopods in directions biased by the gradient direction plus noise, with noise (Gaussian width) inversely proportional to gradient steepness. The closest membrane point to the internal gradient vector is selected as the new front, which is then extended and later retracted. Cell shape is governed by cortical tension, area conservation, and friction.
+\\
+\textbf{Obstacle Navigation and Cell Shape}
+\begin{itemize}
+\item Protrusions are blocked at obstacle boundaries, forcing cells to extend around them.
+\item Model can be tuned for single or multiple protrusions to simulate different cell types.
+\item Navigation is effective only when obstacles are small or comparable to cell size.
+\end{itemize}
+
+\textbf{Maze Performance with Simple Gradient}
+\begin{itemize}
+\item Maze walls were porous to chemoattractant; thus, consistent gradient formed throughout, regardless of maze structure.
+\item Perpendicular walls posed major barriers, causing cell trapping or slow movement.
+\item Low noise enabled faster but riskier movement; high noise increased exploration but reduced efficiency.
+\item Variable noise (apparently seen in \textit{Dictyostelium}) showed improved adaptability.
+\item Overall, gradient-only strategy had low success rates and was maze-structure dependent.
+\end{itemize}
+
+\textbf{Self-Generated Chemorepulsion}
+\begin{itemize}
+\item Cells secreted a repulsive chemical to avoid previously explored regions.
+\item The repellent acted as a diffusing memory, steering cells away from traps.
+\item This strategy significantly boosted success rates (0\% to 70\%) and search efficiency.
+\end{itemize}
+
+\textbf{Applications and Limitations}
+\begin{itemize}
+\item Relevant for cell navigation in porous extracellular matrix (ECM).
+\item Paper is purely computational; some parameters were based on prior experiments.
+\item Mazes were arbitrarily designed, though authors note small changes could drastically alter difficulty.
+It seems likely that small tweaks could be made to maze structure to significantly reduce success rates.
+\end{itemize}
+
+\textbf{Methods:} \\
+The cell is modeled as a chain of connected nodes that respond to internal and external forces. The direction of motion is guided by an internal compass \ensuremath{\mathrm{int}} determined by the external gradient \ensuremath{\mathrm{ext}} plus noise:
+
+\ensuremath{\mathrm{int} = \mathrm{ext} + \eta}
+
+where \ensuremath{\eta} is Gaussian noise with zero mean and variance inversely proportional to the chemoattractant gradient steepness.
+
+The total force acting on each node is:
+
+\ensuremath{F_{\mathrm{total}} = F_{\mathrm{protrusion}} + F_{\mathrm{tension}} + F_{\mathrm{pressure}} + F_{\mathrm{drag}}}
+
+Each component of the force is defined as:
+\begin{itemize}
+\item \ensuremath{F_{\mathrm{protrusion}}}: Protrusive force proportional to local activation, centered on a patch aligned with the internal compass.
+\item \ensuremath{F_{\mathrm{tension}}}: Cortical tension based on curvature \ensuremath{\kappa}, membrane rigidity \ensuremath{\lambda}, and spontaneous curvature \ensuremath{\kappa_0}.
+\item \ensuremath{F_{\mathrm{pressure}}}: Restores cell area \ensuremath{A} to a constant, acting as an effective pressure.
+\item \ensuremath{F_{\mathrm{drag}}}: Damping force proportional to local velocity \ensuremath{v}, imposing speed limits.
+\end{itemize}
+
+The node motion is then given by:
+
+\ensuremath{\frac{dr}{dt} = v = \frac{F_{\mathrm{total}}}{\gamma}}
+
+where \ensuremath{\gamma} is the drag coefficient.
+},
+	author = {Hecht, Inbal and Levine, Herbert and Rappel, Wouter-Jan and {Ben-Jacob}, Eshel},
+	doi = {10.1371/journal.pone.0021955},
+	file = {/Users/edwinhuras/Zotero/storage/LZ4D65PT/Hecht et al. - 2011 - “Self-Assisted” Amoeboid Navigation in Complex Environments.pdf},
+	issn = {1932-6203},
+	journal = {PLOS ONE},
+	keywords = {Animal navigation,Cancer cell migration,Cancers and neoplasms,Cell membranes,Cell motility,Chemotaxis,Extracellular matrix,Metastasis},
+	langid = {english},
+	month = {August},
+	number = {8},
+	pages = {e21955},
+	title = {``{{Self-Assisted}}'' {{Amoeboid Navigation}} in {{Complex Environments}}},
+	urldate = {2025-05-08},
+	volume = {6},
+	year = {2011},
+}
+
 @article{jainRoleSinglecellMechanical2020,
 	abstract = {The directed migration of cell collectives is essential in various physiological processes, such as epiboly, intestinal epithelial turnover, and convergent extension during morphogenesis, as well as during pathological events such as wound healing and cancer metastasis. Collective cell migration leads to the emergence of coordinated movements over multiple cells. Our current understanding emphasizes that these movements are mainly driven by large-scale transmission of signals through adherens junctions. In this study, we show that collective movements of epithelial cells can be triggered by polarity signals at the single-cell level through the establishment of coordinated lamellipodial protrusions. We designed a minimalistic model system to generate one-dimensional epithelial trains confined in ring-shaped patterns that recapitulate rotational movements observed in vitro in cellular monolayers and in vivo in genital or follicular cell rotation. Using our system, we demonstrated that cells follow coordinated rotational movements after establishing directed Rac1-dependent polarity over the entire monolayer. Our experimental and numerical approaches show that the maintenance of coordinated migration requires the acquisition of a front--rear polarity within each single cell but does not require the maintenance of cell--cell junctions. Taken together, these unexpected findings demonstrate that collective cell dynamics in closed environments as observed in multiple in vitro and in vivo situations can arise from single-cell behaviour through a sustained memory of cell polarity.},
 	annotation = { 
@@ -92,7 +169,15 @@ This study explores how epithelial cells migrate collectively in annular (ring-s
 @book{schweitzerSelfOrganizationComplexStructures1997a,
 	abstract = {During the past twenty years, a broad spectrum of theories and methods have been developed in physics, chemistry and molecular biology to explain structure formation in complex systems. These methods have been applied to many different fields such as economics, sociology and town planning, and this book reflects the interdisciplinary nature of complexity and self-organisation. The main focus is on the emergence of collective phenomena from individual or microscopic interactions. Presents a wide-ranging overview from fundamental aspects of the evolution of complexity, to applications in biology, ecology, sociology, economics, and urban structure formation.},
 	address = {Amsterdam, The Netherlands},
-	annotation = {Recommendation from Leah, older book but well respected author. I've had a lot of difficulty finding the text online (nothing shows up but a review on UBC library) and it appears to have been out of print for quite a while. Will try to find some recent sources that cited this book as a means to find relevant papers.},
+	annotation = {Edited collection of works broadly covering self-organization at many different levels, from single cells to economies. 
+Part I looks at the evolution of complexity and evolutionary optimization. 
+Part II goes from biological and ecological to socio-economic dynamics, including urban structure and traffic dynamics. \\
+
+Papers that may be of interest for further study:
+\begin{itemize}
+\item Self-Organization Phenomena of Pedestrian Crowds, Hellbing \& Molnár
+\item Chaotic Behaviour of a model Plankton Community in a Heterogenous Enviroronment, Steffen \& Malchow 
+\end{itemize}},
 	author = {Schweitzer, Frank},
 	edition = {1st edition},
 	isbn = {978-90-5699-027-5},

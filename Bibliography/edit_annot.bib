@@ -323,3 +323,37 @@ where \ensuremath{\gamma} is the drag coefficient.
   abstract = {Bacterial movement in confined spaces is routinely encountered either in a natural environment or in artificial structures. Consequently, the ability to understand and predict the behavior of motile bacterial cells in confined geometries is essential to many applications, spanning from the more classical, such as the management complex microbial networks involved in diseases, biomanufacturing, mining, and environment, to the more recent, such as single cell DNA sequencing and computation with biological agents. Fortunately, the development of this understanding can be helped by the decades-long advances in semiconductor microfabrication, which allow the design and the construction of complex confining structures used as test beds for the study of bacterial motility. To this end, here we use microfabricated channels with varying sizes to study the interaction of Escherichia coli with solid confining spaces. It is shown that an optimal channel size exists for which the hydrostatic potential allows the most efficient movement of the cells. The improved understanding of how bacteria move will result in the ability to design better microfluidic structures based on their interaction with bacterial movement.},
   file = {/Users/edwinhuras/Zotero/storage/XUZQ446E/Libberton et al. - 2019 - Efficiency of the flagellar propulsion of Escherichia coli in confined microfluidic geometries.pdf;/Users/edwinhuras/Zotero/storage/B3NJZ6ZU/PhysRevE.99.html}
 }
+
+@article{buttenschonBridgingSingleCollective2020,
+  title = {Bridging from Single to Collective Cell Migration: {{A}} Review of Models and Links to Experiments},
+  shorttitle = {Bridging from Single to Collective Cell Migration},
+  author = {Buttensch{\"o}n, Andreas and {Edelstein-Keshet}, Leah},
+  annotation = {
+    \textbf{Biological context:} Migrating cell clusters occur in development and disease, e.g.\ collective cell movement in Dictyostelium slugs and in the zebrafish lateral-line organ, as well as metastatic tumor cell clusters. These examples motivate a model of cells that interact via secreted cues (attractant/repellent) to maintain a compact group.  \\
+    \textbf{Model:} A 1D continuum PDE for cell density $\rho(x,t)$ with pure attraction–repulsion (no random motility) is used. Cells experience a velocity proportional to $\ensuremath{-\nabla (K*\rho)}$ (velocity proportional to Force due to negligible cellular inertia), where the convolution 
+    $\ensuremath{(K*\rho)(x)=\int_{\rm I\!R}K(x-y)\rho(y)\,\mathrm{d}y}$ 
+    sums all distance-dependent interactions.  The kernel is a symmetric Morse-type potential 
+    $\ensuremath{K(x)=Rr\exp(-|x|/r) - Aa\exp(-|x|/a)}$, 
+    encoding short-range repulsion (strength $R$, range $r$) and longer-range attraction (strength $A$, range $a$). Analysis focuses on steady states (cluster profiles) with zero-flux boundary conditions (``zero contact angle'') (no migration is modeled).  \\
+    \textbf{Clustering analysis:}  The paper investigates when and how non-uniform steady clusters form.  Key findings include: 
+    \begin{itemize}
+      \item \textbf{Stability criterion}:  Linear stability shows that stable clusters exist when $\frac{R}{A} > 1,\frac{a}{r} > 1,\frac{R}{A} < \frac{a^2}{r^2}$. That is, repulsion strength is greater than attraction strength while attraction range greater than repulsion range.
+      \item \textbf{Influence of parameters}:  Increasing attraction strength $A$ or its range $a$ enlarges and stabilizes clusters, while increasing repulsion $R$ or range $r$ shrinks or disperses them.  If attraction is too weak (small $A$ or $a$), no cluster forms; if repulsion is too strong, the cluster cannot hold together.
+    \end{itemize}
+    \textbf{Conclusions:}  A balance of short-range repulsion and longer-range attraction (captured by the Morse potential) can maintain a robust 1D cell cluster. Tuning the amplitudes $R,A$ and length-scales $r,a$ controls the cluster outcome: stronger or longer-ranged attraction supports larger, more stable clusters, while excess repulsion prevents clustering.  
+  },
+  year = {2020},
+  month = dec,
+  journal = {PLOS Computational Biology},
+  volume = {16},
+  number = {12},
+  pages = {e1008411},
+  publisher = {Public Library of Science},
+  issn = {1553-7358},
+  doi = {10.1371/journal.pcbi.1008411},
+  urldate = {2025-05-19},
+  abstract = {Mathematical and computational models can assist in gaining an understanding of cell behavior at many levels of organization. Here, we review models in the literature that focus on eukaryotic cell motility at 3 size scales: intracellular signaling that regulates cell shape and movement, single cell motility, and collective cell behavior from a few cells to tissues. We survey recent literature to summarize distinct computational methods (phase-field, polygonal, Cellular Potts, and spherical cells). We discuss models that bridge between levels of organization, and describe levels of detail, both biochemical and geometric, included in the models. We also highlight links between models and experiments. We find that models that span the 3 levels are still in the minority.},
+  langid = {english},
+  keywords = {Actins,Cell migration,Cell motility,Cell polarity,Cell signaling,GTPase signaling,Guanosine triphosphatase,Signaling networks},
+  file = {/Users/edwinhuras/Zotero/storage/TBAI46FG/Buttenschön and Edelstein-Keshet - 2020 - Bridging from single to collective cell migration A review of models and links to experiments.pdf}
+}

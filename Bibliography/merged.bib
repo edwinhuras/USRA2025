@@ -55,6 +55,59 @@
 	year = {2023},
 }
 
+@article{buttenschonBridgingSingleCollective2020,
+	abstract = {Mathematical and computational models can assist in gaining an understanding of cell behavior at many levels of organization. Here, we review models in the literature that focus on eukaryotic cell motility at 3 size scales: intracellular signaling that regulates cell shape and movement, single cell motility, and collective cell behavior from a few cells to tissues. We survey recent literature to summarize distinct computational methods (phase-field, polygonal, Cellular Potts, and spherical cells). We discuss models that bridge between levels of organization, and describe levels of detail, both biochemical and geometric, included in the models. We also highlight links between models and experiments. We find that models that span the 3 levels are still in the minority.},
+	annotation = {
+\textbf{Biological context:} Migrating cell clusters occur in development and disease, e.g.\ collective cell movement in Dictyostelium slugs and in the zebrafish lateral-line organ, as well as metastatic tumor cell clusters. These examples motivate a model of cells that interact via secreted cues (attractant/repellent) to maintain a compact group.  \\
+\textbf{Model:} A 1D continuum PDE for cell density $\rho(x,t)$ with pure attraction–repulsion (no random motility) is used. Cells experience a velocity proportional to $\ensuremath{-\nabla (K*\rho)}$ (velocity proportional to Force due to negligible cellular inertia), where the convolution 
+$\ensuremath{(K*\rho)(x)=\int_{\rm I\!R}K(x-y)\rho(y)\,\mathrm{d}y}$ 
+sums all distance-dependent interactions.  The kernel is a symmetric Morse-type potential 
+$\ensuremath{K(x)=Rr\exp(-|x|/r) - Aa\exp(-|x|/a)}$, 
+encoding short-range repulsion (strength $R$, range $r$) and longer-range attraction (strength $A$, range $a$). Analysis focuses on steady states (cluster profiles) with zero-flux boundary conditions (``zero contact angle'') (no migration is modeled).  \\
+\textbf{Clustering analysis:}  The paper investigates when and how non-uniform steady clusters form.  Key findings include: 
+\begin{itemize}
+\item \textbf{Stability criterion}:  Linear stability shows that stable clusters exist when $\frac{R}{A} > 1,\frac{a}{r} > 1,\frac{R}{A} < \frac{a^2}{r^2}$. That is, repulsion strength is greater than attraction strength while attraction range greater than repulsion range.
+\item \textbf{Influence of parameters}:  Increasing attraction strength $A$ or its range $a$ enlarges and stabilizes clusters, while increasing repulsion $R$ or range $r$ shrinks or disperses them.  If attraction is too weak (small $A$ or $a$), no cluster forms; if repulsion is too strong, the cluster cannot hold together.
+\end{itemize}
+\textbf{Conclusions:}  A balance of short-range repulsion and longer-range attraction (captured by the Morse potential) can maintain a robust 1D cell cluster. Tuning the amplitudes $R,A$ and length-scales $r,a$ controls the cluster outcome: stronger or longer-ranged attraction supports larger, more stable clusters, while excess repulsion prevents clustering.  
+},
+	author = {Buttensch{\"o}n, Andreas and {Edelstein-Keshet}, Leah},
+	doi = {10.1371/journal.pcbi.1008411},
+	file = {/Users/edwinhuras/Zotero/storage/TBAI46FG/Buttenschön and Edelstein-Keshet - 2020 - Bridging from single to collective cell migration A review of models and links to experiments.pdf},
+	issn = {1553-7358},
+	journal = {PLOS Computational Biology},
+	keywords = {Actins,Cell migration,Cell motility,Cell polarity,Cell signaling,GTPase signaling,Guanosine triphosphatase,Signaling networks},
+	langid = {english},
+	month = {December},
+	number = {12},
+	pages = {e1008411},
+	publisher = {Public Library of Science},
+	shorttitle = {Bridging from Single to Collective Cell Migration},
+	title = {Bridging from Single to Collective Cell Migration: {{A}} Review of Models and Links to Experiments},
+	urldate = {2025-05-19},
+	volume = {16},
+	year = {2020},
+}
+
+@article{buttenschonHowCellsStay2024,
+	abstract = {Formation of organs and specialized tissues in embryonic development requires migration of cells to specific targets. In some instances, such cells migrate as a robust cluster. We here explore a recent local approximation of non-local continuum models by Falc{\'o} et al. (SIAM J Appl Math 84:17--42, 2023). We apply their theoretical results by specifying biologically-based cell--cell interactions, showing how such cell communication results in an effective attraction--repulsion Morse potential. We then explore the clustering instability, the existence and size of the cluster, and its stability. For attractant--repellent chemotaxis, we derive an explicit condition on cell and chemical properties that guarantee the existence of robust clusters. We also extend their work by investigating the accuracy of the local approximation relative to the full non-local model.},
+	author = {Buttensch{\"o}n, Andreas and Sinclair, Shona and {Edelstein-Keshet}, Leah},
+	doi = {10.1007/s11538-024-01355-4},
+	file = {/Users/edwinhuras/Zotero/storage/ND46PKMM/Buttenschön et al. - 2024 - How Cells Stay Together A Mechanism for Maintenance of a Robust Cluster Explored by Local and Non-l.pdf},
+	issn = {1522-9602},
+	journal = {Bulletin of Mathematical Biology},
+	keywords = {95B05,Attractant-repellent chemotaxis,Cell Adhesion,Cell Migration,Cellular Motility,Cohesion,Collective Cell Migration,Continuum Mechanics,Local PDE approximation,Morse potential,Non-local PDE,Stable cell cluster},
+	langid = {english},
+	month = {September},
+	number = {11},
+	pages = {129},
+	shorttitle = {How {{Cells Stay Together}}},
+	title = {How {{Cells Stay Together}}: {{A Mechanism}} for {{Maintenance}} of a {{Robust Cluster Explored}} by {{Local}} and {{Non-local Continuum Models}}},
+	urldate = {2025-05-19},
+	volume = {86},
+	year = {2024},
+}
+
 @article{hechtSelfAssistedAmoeboidNavigation2011,
 	abstract = {Background Living cells of many types need to move in response to external stimuli in order to accomplish their functional tasks; these tasks range from wound healing to immune response to fertilization. While the directional motion is typically dictated by an external signal, the actual motility is also restricted by physical constraints, such as the presence of other cells and the extracellular matrix. The ability to successfully navigate in the presence of obstacles is not only essential for organisms, but might prove relevant in the study of autonomous robotic motion. Methodology/Principal Findings We study a computational model of amoeboid chemotactic navigation under differing conditions, from motion in an obstacle-free environment to navigation between obstacles and finally to moving in a maze. We use the maze as a simple stand-in for a motion task with severe constraints, as might be expected in dense extracellular matrix. Whereas agents using simple chemotaxis can successfully navigate around small obstacles, the presence of large barriers can often lead to agent trapping. We further show that employing a simple memory mechanism, namely secretion of a repulsive chemical by the agent, helps the agent escape from such trapping. Conclusions/Significance Our main conclusion is that cells employing simple chemotactic strategies will often be unable to navigate through maze-like geometries, but a simple chemical marker mechanism (which we refer to as ``self-assistance'') significantly improves success rates. This realization provides important insights into mechanisms that might be employed by real cells migrating in complex environments as well as clues for the design of robotic navigation strategies. The results can be extended to more complicated multi-cellular systems and can be used in the study of mammalian cell migration and cancer metastasis.},
 	annotation = {

@@ -29,8 +29,8 @@
 	langid = {english},
 	month = {August},
 	number = {1},
-	pages = {13626},
 	publisher = {Nature Publishing Group},
+	series = {13626},
 	title = {The Connection between Stress, Density, and Speed in Crowds},
 	urldate = {2025-05-12},
 	volume = {13},
@@ -57,6 +57,25 @@
 
 @article{buttenschonBridgingSingleCollective2020,
 	abstract = {Mathematical and computational models can assist in gaining an understanding of cell behavior at many levels of organization. Here, we review models in the literature that focus on eukaryotic cell motility at 3 size scales: intracellular signaling that regulates cell shape and movement, single cell motility, and collective cell behavior from a few cells to tissues. We survey recent literature to summarize distinct computational methods (phase-field, polygonal, Cellular Potts, and spherical cells). We discuss models that bridge between levels of organization, and describe levels of detail, both biochemical and geometric, included in the models. We also highlight links between models and experiments. We find that models that span the 3 levels are still in the minority.},
+	author = {Buttensch{\"o}n, Andreas and {Edelstein-Keshet}, Leah},
+	doi = {10.1371/journal.pcbi.1008411},
+	file = {/Users/edwinhuras/Zotero/storage/TBAI46FG/Buttenschön and Edelstein-Keshet - 2020 - Bridging from single to collective cell migration A review of models and links to experiments.pdf},
+	issn = {1553-7358},
+	journal = {PLOS Computational Biology},
+	keywords = {Actins,Cell migration,Cell motility,Cell polarity,Cell signaling,GTPase signaling,Guanosine triphosphatase,Signaling networks},
+	langid = {english},
+	month = {December},
+	number = {12},
+	publisher = {Public Library of Science},
+	shorttitle = {Bridging from Single to Collective Cell Migration},
+	title = {Bridging from Single to Collective Cell Migration: {{A}} Review of Models and Links to Experiments},
+	urldate = {2025-05-19},
+	volume = {16},
+	year = {2020},
+}
+
+@article{buttenschonHowCellsStay2024,
+	abstract = {Formation of organs and specialized tissues in embryonic development requires migration of cells to specific targets. In some instances, such cells migrate as a robust cluster. We here explore a recent local approximation of non-local continuum models by Falc{\'o} et al. (SIAM J Appl Math 84:17--42, 2023). We apply their theoretical results by specifying biologically-based cell--cell interactions, showing how such cell communication results in an effective attraction--repulsion Morse potential. We then explore the clustering instability, the existence and size of the cluster, and its stability. For attractant--repellent chemotaxis, we derive an explicit condition on cell and chemical properties that guarantee the existence of robust clusters. We also extend their work by investigating the accuracy of the local approximation relative to the full non-local model.},
 	annotation = {
 \textbf{Biological context:} Migrating cell clusters occur in development and disease, e.g.\ collective cell movement in Dictyostelium slugs and in the zebrafish lateral-line organ, as well as metastatic tumor cell clusters. These examples motivate a model of cells that interact via secreted cues (attractant/repellent) to maintain a compact group.  \\
 \textbf{Model:} A 1D continuum PDE for cell density $\rho(x,t)$ with pure attraction–repulsion (no random motility) is used. Cells experience a velocity proportional to $\ensuremath{-\nabla (K*\rho)}$ (velocity proportional to Force due to negligible cellular inertia), where the convolution 
@@ -71,26 +90,6 @@ encoding short-range repulsion (strength $R$, range $r$) and longer-range attrac
 \end{itemize}
 \textbf{Conclusions:}  A balance of short-range repulsion and longer-range attraction (captured by the Morse potential) can maintain a robust 1D cell cluster. Tuning the amplitudes $R,A$ and length-scales $r,a$ controls the cluster outcome: stronger or longer-ranged attraction supports larger, more stable clusters, while excess repulsion prevents clustering.  
 },
-	author = {Buttensch{\"o}n, Andreas and {Edelstein-Keshet}, Leah},
-	doi = {10.1371/journal.pcbi.1008411},
-	file = {/Users/edwinhuras/Zotero/storage/TBAI46FG/Buttenschön and Edelstein-Keshet - 2020 - Bridging from single to collective cell migration A review of models and links to experiments.pdf},
-	issn = {1553-7358},
-	journal = {PLOS Computational Biology},
-	keywords = {Actins,Cell migration,Cell motility,Cell polarity,Cell signaling,GTPase signaling,Guanosine triphosphatase,Signaling networks},
-	langid = {english},
-	month = {December},
-	number = {12},
-	pages = {e1008411},
-	publisher = {Public Library of Science},
-	shorttitle = {Bridging from Single to Collective Cell Migration},
-	title = {Bridging from Single to Collective Cell Migration: {{A}} Review of Models and Links to Experiments},
-	urldate = {2025-05-19},
-	volume = {16},
-	year = {2020},
-}
-
-@article{buttenschonHowCellsStay2024,
-	abstract = {Formation of organs and specialized tissues in embryonic development requires migration of cells to specific targets. In some instances, such cells migrate as a robust cluster. We here explore a recent local approximation of non-local continuum models by Falc{\'o} et al. (SIAM J Appl Math 84:17--42, 2023). We apply their theoretical results by specifying biologically-based cell--cell interactions, showing how such cell communication results in an effective attraction--repulsion Morse potential. We then explore the clustering instability, the existence and size of the cluster, and its stability. For attractant--repellent chemotaxis, we derive an explicit condition on cell and chemical properties that guarantee the existence of robust clusters. We also extend their work by investigating the accuracy of the local approximation relative to the full non-local model.},
 	author = {Buttensch{\"o}n, Andreas and Sinclair, Shona and {Edelstein-Keshet}, Leah},
 	doi = {10.1007/s11538-024-01355-4},
 	file = {/Users/edwinhuras/Zotero/storage/ND46PKMM/Buttenschön et al. - 2024 - How Cells Stay Together A Mechanism for Maintenance of a Robust Cluster Explored by Local and Non-l.pdf},
@@ -106,6 +105,81 @@ encoding short-range repulsion (strength $R$, range $r$) and longer-range attrac
 	urldate = {2025-05-19},
 	volume = {86},
 	year = {2024},
+}
+
+@article{camleyPhysicalModelsCollective2017,
+	abstract = {In this article, we review physics-based models of collective cell motility. We discuss a range of techniques at different scales, ranging from models that represent cells as simple self-propelled particles to phase field models that can represent a cell's shape and dynamics in great detail. We also extensively review the ways in which cells within a tissue choose their direction, the statistics of cell motion, and some simple examples of how cell--cell signaling can interact with collective cell motility. This review also covers in more detail selected recent works on collective cell motion of small numbers of cells on micropatterns, in wound healing, and the chemotaxis of clusters of cells.},
+	annotation = {
+This paper surveys agent‐based models that resolve individual cells to study collective motility in constrained and unconstrained environments.  
+\\
+\textbf{Four key ingredients of collective motility:}
+\begin{itemize}
+\item \emph{Single‐cell motility:} characteristic speed and orientation distributions.
+\item \emph{Cell shape \& mechanics:} representation of cell–cell adhesion, repulsion, and deformation.
+\item \emph{Polarity mechanisms:} rules by which cells choose their direction of motion.
+\item \emph{Biochemical signalling:} intercellular exchange of attractants, repellents, and other cues.
+\end{itemize}
+
+\textbf{Single‐cell motility statistics:}
+\begin{itemize}
+\item Velocity distributions: Gaussian (zero mean), polarized (nonzero mean), or intermittent (switching between low/high states).
+\item Persistence time: characteristic timescale over which velocity correlations decay.
+\item Low–Reynolds‐number limit: overdamped force balance  
+$ \ensuremath{F - \gamma v = 0}$, with drag coefficient $\gamma$ and active force $F$ aligned with polarity $\ensuremath{\mathbf{p}}$.  
+\item Polarity dynamics:  
+$ \ensuremath{\partial_t \mathbf{x}_{\rm cell} = \mathbf{v}_{\rm cell} = \mathbf{p}}, \quad
+\ensuremath{\partial_t \mathbf{p}(t)
+= -\frac{\partial W}{\partial \mathbf{p}}
++ \int_{-\infty}^{t}\!dt'\,K(t - t')\,\mathbf{p}(t')
++ \sigma\,\xi(t)},$  
+where $W(\mathbf{p})$ is a polarity potential, $K(t)$ a memory kernel, and  
+$\ensuremath{\langle \xi_i(t)\,\xi_j(t')\rangle = \delta_{ij}\,\delta(t - t')}$.
+\end{itemize}
+
+\textbf{Cell shape \& mechanical interaction models:}
+\begin{itemize}
+\item \emph{Isotropic deformable particles:}  
+Overdamped force‐balance with pairwise potentials combining short‐range repulsion (no overlap) and longer‐range adhesion.  
+Minimal but may misrepresent tissue mechanics near jamming.
+\item \emph{Voronoi/vertex models:}  
+Cells as polygons (vertices) or Voronoi regions around cell centers.  
+Interface energies via Hamiltonians penalizing deviations from preferred area/perimeter; active forces added.  
+Best for confluent layers; cannot represent free cell edges naturally.
+\item \emph{Subcellular element models:}  
+Cells as networks of elements (particles + springs).  
+Capture intra‐cellular mechanics and front/back polarity by differential bond dynamics.  
+Useful for rheology studies but computationally heavier.
+\item \emph{Cellular Potts models:}  
+Lattice spins label cells; energy  
+$ \ensuremath{H = \sum_{a,b} J_{ab}\bigl(1 - \delta_{\sigma(a),\sigma(b)}\bigr)
++ \sum_i \lambda (A_i - A_{i,0})^2},$  
+evolved by Monte Carlo updates (Metropolis rule).  
+Efficient for many cells; time and forces are emergent and less physically explicit.
+\item \emph{Phase‐field models:}  
+Each cell has a smooth indicator field $\ensuremath{\phi(\mathbf r)}\in[0,1]$.  
+Dynamics by variational derivative of a Hamiltonian:  
+$ \ensuremath{\partial_t \phi + \mathbf v_{\rm active}\!\cdot\!\nabla \phi
+= -\frac{1}{\zeta\,\epsilon}\,\frac{\delta H}{\delta \phi}},$  
+where $\zeta$ is friction, $\epsilon$ interface width.  
+Can couple shape, mechanics, and biochemistry; best for $<100$ cells due to PDE cost.
+\end{itemize}
+
+\textbf{Recommendations}  
+Choose model complexity to match the biological question: for large‐scale collective patterns, isotropic or Potts models suffice; for detailed shape–motility couplings or mechanochemical feedback, phase‐field or subcellular element models are preferred.},
+	author = {Camley, B A and Rappel, W-J},
+	doi = {10.1088/1361-6463/aa56fe},
+	file = {/Users/edwinhuras/Zotero/storage/P3JW4YFA/Camley and Rappel - 2017 - Physical models of collective cell motility from cell to tissue.pdf},
+	issn = {0022-3727},
+	journal = {Journal of Physics D: Applied Physics},
+	langid = {english},
+	month = {February},
+	number = {113002},
+	publisher = {IOP Publishing},
+	shorttitle = {Physical Models of Collective Cell Motility},
+	title = {Physical Models of Collective Cell Motility: From Cell to Tissue},
+	urldate = {2025-05-21},
+	volume = {50},
+	year = {2017},
 }
 
 @article{hechtSelfAssistedAmoeboidNavigation2011,
@@ -178,7 +252,6 @@ where \ensuremath{\gamma} is the drag coefficient.
 	langid = {english},
 	month = {August},
 	number = {8},
-	pages = {e21955},
 	title = {``{{Self-Assisted}}'' {{Amoeboid Navigation}} in {{Complex Environments}}},
 	urldate = {2025-05-08},
 	volume = {6},
@@ -249,7 +322,6 @@ This study explores how epithelial cells migrate collectively in annular (ring-s
 	journal = {Computers, Environment and Urban Systems},
 	keywords = {Agent-based model,Pedestrian mobility,Pedestrian traffic,Transport model},
 	month = {October},
-	pages = {102021},
 	title = {Large-Scale Agent-Based Simulation Model of Pedestrian Traffic Flows},
 	urldate = {2025-05-12},
 	volume = {105},
@@ -285,7 +357,6 @@ This study explores how epithelial cells migrate collectively in annular (ring-s
 	journal = {Physical Review E},
 	month = {January},
 	number = {1},
-	pages = {012408},
 	publisher = {American Physical Society},
 	title = {Efficiency of the Flagellar Propulsion of {{Escherichia}} Coli in Confined Microfluidic Geometries},
 	urldate = {2025-05-12},
@@ -335,66 +406,6 @@ Papers that may be of interest for further study:
 
 @article{tweedySeeingCornersCells2020,
 	abstract = {During development and metastasis, cells migrate large distances through complex environments. Migration is often guided by chemotaxis, but simple chemoattractant gradients between a source and sink cannot direct cells over such ranges. We describe how self-generated gradients, created by cells locally degrading attractant, allow single cells to navigate long, tortuous paths and make accurate choices between live channels and dead ends. This allows cells to solve complex mazes efficiently. Cells' accuracy at finding live channels was determined by attractant diffusivity, cell speed, and path complexity. Manipulating these parameters directed cells in mathematically predictable ways; specific combinations can even actively misdirect them. We propose that the length and complexity of many long-range migratory processes, including inflammation and germ cell migration, means that self-generated gradients are needed for successful navigation.},
-	annotation = {\textbf{Self-generated chemotaxis:}
-
-Self-generated chemotaxis cannot be directly measured and typically requires computational modeling to analyze. It is distinguished from classical chemotaxis by several key features:
-
-\begin{itemize}
-\item Gradients are sharp, local, and nonsaturating (unlike traditional source/sink gradients).
-\item Diffusion plays a central role (in contrast to constant or linear gradients).
-\item General chemotaxis is limited in effective range (500 $\mu$m) and attractant concentration.
-\end{itemize}
-
-Cells such as \textit{Dictyostelium discoideum} and metastatic cancer cells use self-generated chemotaxis to navigate complex environments (e.g., tumor tissue or migration routes). These cells degrade attractants locally using surface enzymes, resulting in dynamic gradients that help them sense and respond to upcoming junctions. This enables cells to "see around corners" and map their environment.
-\\
-\textbf{Junction Navigation and Model Behavior:}
-
-\begin{itemize}
-\item In classical chemotaxis, cells choose paths randomly at junctions.
-\item In self-generated chemotaxis:
-\begin{itemize}
-\item Paths are evenly split unless one is a dead end.
-\item If a branch is a dead end, only a few cells explore it. Their degradation of attractants prevents others from following.
-\item Short dead ends are completely avoided: attractant gradients are dissipated before cells even arrive.
-\end{itemize}
-\end{itemize}
-
-\textbf{Maze Navigation:}
-
-\begin{itemize}
-\item Cells navigate mazes successfully even with uniform attractant concentration.
-\item Longer dead ends reduce decision fidelity.
-\item Decision-making improves over time due to attractant depletion in dead ends.
-\item Slower cell speeds (in simulation) improve accuracy, though this does not generalize to slower-moving cancer cells, likely due to differences in attractant diffusivity.
-\item Dead ends with widening or branching structures can create "chemotactic mirages" and attract cells.
-\end{itemize}
-
-\textbf{Key Conclusions:}
-
-\begin{itemize}
-\item Attractant flux (rate of change) is more critical for cell decisions than attractant concentration.
-\item Maze geometry, especially dead end length, affects gradient strength and navigational accuracy.
-\item Ligand breakdown is rarely modeled but is biologically significant and should be incorporated in future models.
-\item Implications for understanding complex migration phenomena, including:
-\begin{itemize}
-\item Neutrophil extravasation,
-\item Melanoblast migration in embryonic dermis,
-\item Glioblastoma metastasis along white matter tracts.
-\end{itemize}
-\end{itemize}
-
-\textbf{Modeling Details:}
-
-\begin{itemize}
-\item Simulations were implemented in Java.
-\item Diffusion was simulated using the semi-implicit DuFort-Frankel method in a complex environment.
-\item Cells followed a persistent, biased random walk informed by local gradient sensing.
-\item Gradient direction was estimated from grid points within 6 $\mu$m of the cell centroid.
-\item Attractant degradation followed Michaelis-Menten kinetics, with rate \ensuremath{r = v_{\mathrm{max}} \frac{c}{c + K_m}},
-where $c$ is the local concentration and $k_m$ is the Michaelis constant.
-\end{itemize}
-
-\textit{Note}: This form of chemotaxis is fundamentally different from that used by \textit{Physarum polycephalum}, which explores all paths and later prunes the least successful.},
 	author = {Tweedy, Luke and Thomason, Peter A. and Paschke, Peggy I. and Martin, Kirsty and Machesky, Laura M. and Zagnoni, Michele and Insall, Robert H.},
 	doi = {10.1126/science.aay9792},
 	file = {/Users/edwinhuras/Zotero/storage/HF4VAXMW/Tweedy et al. - 2020 - Seeing around corners Cells solve mazes and respond at a distance using attractant breakdown.pdf},
@@ -404,7 +415,7 @@ where $c$ is the local concentration and $k_m$ is the Michaelis constant.
 	langid = {english},
 	month = {August},
 	number = {6507},
-	pages = {eaay9792},
+	series = {Eaay9792},
 	shorttitle = {Seeing around Corners},
 	title = {Seeing around Corners: {{Cells}} Solve Mazes and Respond at a Distance Using Attractant Breakdown},
 	volume = {369},

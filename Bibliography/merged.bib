@@ -406,6 +406,66 @@ Papers that may be of interest for further study:
 
 @article{tweedySeeingCornersCells2020,
 	abstract = {During development and metastasis, cells migrate large distances through complex environments. Migration is often guided by chemotaxis, but simple chemoattractant gradients between a source and sink cannot direct cells over such ranges. We describe how self-generated gradients, created by cells locally degrading attractant, allow single cells to navigate long, tortuous paths and make accurate choices between live channels and dead ends. This allows cells to solve complex mazes efficiently. Cells' accuracy at finding live channels was determined by attractant diffusivity, cell speed, and path complexity. Manipulating these parameters directed cells in mathematically predictable ways; specific combinations can even actively misdirect them. We propose that the length and complexity of many long-range migratory processes, including inflammation and germ cell migration, means that self-generated gradients are needed for successful navigation.},
+	annotation = {\textbf{Self-generated chemotaxis:}
+
+Self-generated chemotaxis cannot be directly measured and typically requires computational modeling to analyze. It is distinguished from classical chemotaxis by several key features:
+
+\begin{itemize}
+\item Gradients are sharp, local, and nonsaturating (unlike traditional source/sink gradients).
+\item Diffusion plays a central role (in contrast to constant or linear gradients).
+\item General chemotaxis is limited in effective range (500 $\mu$m) and attractant concentration.
+\end{itemize}
+
+Cells such as \textit{Dictyostelium discoideum} and metastatic cancer cells use self-generated chemotaxis to navigate complex environments (e.g., tumor tissue or migration routes). These cells degrade attractants locally using surface enzymes, resulting in dynamic gradients that help them sense and respond to upcoming junctions. This enables cells to "see around corners" and map their environment.
+\\
+\textbf{Junction Navigation and Model Behavior:}
+
+\begin{itemize}
+\item In classical chemotaxis, cells choose paths randomly at junctions.
+\item In self-generated chemotaxis:
+\begin{itemize}
+\item Paths are evenly split unless one is a dead end.
+\item If a branch is a dead end, only a few cells explore it. Their degradation of attractants prevents others from following.
+\item Short dead ends are completely avoided: attractant gradients are dissipated before cells even arrive.
+\end{itemize}
+\end{itemize}
+
+\textbf{Maze Navigation:}
+
+\begin{itemize}
+\item Cells navigate mazes successfully even with uniform attractant concentration.
+\item Longer dead ends reduce decision fidelity.
+\item Decision-making improves over time due to attractant depletion in dead ends.
+\item Slower cell speeds (in simulation) improve accuracy, though this does not generalize to slower-moving cancer cells, likely due to differences in attractant diffusivity.
+\item Dead ends with widening or branching structures can create "chemotactic mirages" and attract cells.
+\end{itemize}
+
+\textbf{Key Conclusions:}
+
+\begin{itemize}
+\item Attractant flux (rate of change) is more critical for cell decisions than attractant concentration.
+\item Maze geometry, especially dead end length, affects gradient strength and navigational accuracy.
+\item Ligand breakdown is rarely modeled but is biologically significant and should be incorporated in future models.
+\item Implications for understanding complex migration phenomena, including:
+\begin{itemize}
+\item Neutrophil extravasation,
+\item Melanoblast migration in embryonic dermis,
+\item Glioblastoma metastasis along white matter tracts.
+\end{itemize}
+\end{itemize}
+
+\textbf{Modeling Details:}
+
+\begin{itemize}
+\item Simulations were implemented in Java.
+\item Diffusion was simulated using the semi-implicit DuFort-Frankel method in a complex environment.
+\item Cells followed a persistent, biased random walk informed by local gradient sensing.
+\item Gradient direction was estimated from grid points within 6 $\mu$m of the cell centroid.
+\item Attractant degradation followed Michaelis-Menten kinetics, with rate \ensuremath{r = v_{\mathrm{max}} \frac{c}{c + K_m}},
+where $c$ is the local concentration and $k_m$ is the Michaelis constant.
+\end{itemize}
+
+\textit{Note}: This form of chemotaxis is fundamentally different from that used by \textit{Physarum polycephalum}, which explores all paths and later prunes the least successful.},
 	author = {Tweedy, Luke and Thomason, Peter A. and Paschke, Peggy I. and Martin, Kirsty and Machesky, Laura M. and Zagnoni, Michele and Insall, Robert H.},
 	doi = {10.1126/science.aay9792},
 	file = {/Users/edwinhuras/Zotero/storage/HF4VAXMW/Tweedy et al. - 2020 - Seeing around corners Cells solve mazes and respond at a distance using attractant breakdown.pdf},
